@@ -14,7 +14,7 @@ fetch(url)
             div.classList.add('data-item');
 
             div.innerHTML = `
-            <p>${item.name}</p>
+            <h3>${item.name}</h3>
             `;
 
         dataContainer.appendChild(div);
