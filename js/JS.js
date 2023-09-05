@@ -7,15 +7,19 @@ fetch(url)
 
         const arrayPokemons = data.results;
         const dataContainer = document.getElementById('poke-container')
+        let contador = 1;
 
         arrayPokemons.forEach(item => {
 
             const div = document.createElement('div');
             div.classList.add('data-item');
 
+            const nombrePokemon = item.name.charAt(0).toUpperCase() + item.name.slice(1);
+
             div.innerHTML = `
-            <h3>${item.name}</h3>
-            `;
+                <h3>${contador}. ${nombrePokemon}</h3>`;
+
+            contador++;
 
         dataContainer.appendChild(div);
     });
