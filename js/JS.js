@@ -27,6 +27,10 @@ fetch(url)
 
         dataContainer.appendChild(div);
         });
+    })
+
+    .catch(error => {
+        console.error('Error al obtener datos:', error);
     });
 
     

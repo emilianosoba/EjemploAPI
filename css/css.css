@@ -1,0 +1,50 @@
+.body-index {
+    background-image: url('https://consolaytablero.com/wp-content/uploads/2014/04/pokemon-todos.jpg');
+    background-size: cover;
+    
+    
+}
+.box-tittle {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 20px;
+
+    
+}
+
+
+#titulo {
+    font-family: sans-serif;
+    font-size: 3rem;
+    color: blue;
+    padding-right: 6.5rem;
+    
+}
+
+#titulo:hover {
+    color: rgb(170, 6, 6);
+    
+}
+
+#box-btn {
+    display: flex;
+    justify-content: center;
+    padding-right: 6.5rem;
+    padding-top: 5rem;
+}
+
+.btn {
+    
+    box-shadow: 5px 5px  rgb(27, 2, 247);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    
+}
+
+#poke-container {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
