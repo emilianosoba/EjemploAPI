@@ -10,7 +10,7 @@ fetch(url)
         const dataContainer = document.getElementById('poke-container')
         let contador = 1;
 
-        for (const item of arrayPokemons) {
+        arrayPokemons.forEach(item =>  {
 
             const div = document.createElement('div');
             div.classList.add('data-item');
@@ -26,7 +26,7 @@ fetch(url)
             contador++;
 
         dataContainer.appendChild(div);
-        }
+        });
     });
 
     
