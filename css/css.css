@@ -47,7 +47,6 @@
 
 .data-item {
     display: flex;
-    
-
     color: rgb(134, 10, 10);
+    width: 20%;
 }
