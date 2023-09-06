@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", function() {
 
 const url = 'https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0'
 
@@ -34,7 +34,7 @@ fetch(url)
         console.error('Error al obtener datos:', error);
     });
 
-
+})
 
     
 
