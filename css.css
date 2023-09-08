@@ -1,52 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .body-index {
-    background-image: url('https://consolaytablero.com/wp-content/uploads/2014/04/pokemon-todos.jpg');
+    background-image: url('14763-pokemon.jpg');
     background-size: cover;
     
+    
 }
+
 .box-tittle {
     display: flex;
     justify-content: center;
-    border-radius: 20px;
-    margin: 20px;
+    margin: 40px;
+    padding: 20px;
+    background-image: linear-gradient( 150deg, #9500ff, #09f, #00DDFF);
+    border-radius: 8px;
   
 }
+
 
 #titulo {
     font-family: sans-serif;
     font-size: 3rem;
-    color: blue;
+    color: rgb(37, 213, 236);
     padding-right: 6.5rem;
+    -webkit-text-stroke: 2.3px #9900ff; 
     
 }
 
-#titulo:hover {
-    color: rgb(170, 6, 6);
-    
-}
+.box-tittle {
+    border-style:groove ;
+    border-color: #9900ff blue;
 
-#box-btn {
+}
+    
+
+.box-btn {
     display: flex;
     justify-content: center;
-    padding-right: 6.5rem;
-    padding-top: 5rem;
+    align-items: center;
+    
 }
 
+
 .btn {
+
+    border: 0;
+    background-image: linear-gradient( 150deg, #9500ff, #09f, #00DDFF);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+
+.btn2 {
     
-    box-shadow: 5px 5px  rgb(27, 2, 247);
-    border-radius: 5px;
-    font-size: 1.2rem;
+    border: 0;
+    background-image: linear-gradient( 150deg, #9500ff, #09f, #00DDFF);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    margin-right: 20px;
     
+    
+}
+
+button span {
+    background-color: #111;
+    padding: 10px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+button:hover {
+    background: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.box-grid {
+    padding: 6rem;
 }
 
 #poke-container {
-    display: flex;
-    flex-direction: column;
-    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 1rem;
+    margin-left: 5rem;
+}
+
+#poke-containerV2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 1rem;
+    margin-left: 5rem;
 }
 
 .data-item {
+        border: 3px solid rgb(120, 7, 212);
+        padding: 1rem;
+        text-align: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        display: flex;
+        color: rgb(255, 255, 255);
+        width: 50%;
+        
+}
+
+.data-item h3 {
+    align-items: center;
+}
+
+.body-grids {
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+#box-btn-volver {
+    
     display: flex;
-    color: rgb(134, 10, 10);
-    width: 20%;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+
+.btn-volver {
+    border: 0;
+    background-image: linear-gradient( 150deg, #9500ff, #09f, #00DDFF);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#animation {
+    position: relative;
+    animation: fall 1.5s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+/* Animación de caída */
+@keyframes fall {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

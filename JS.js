@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-const url = 'https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0';
+    const url = 'https://pokeapi.co/api/v2/pokemon?limit=150&offset=0';;
 
 
 fetch(url)
